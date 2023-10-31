@@ -82,7 +82,7 @@ body{
     left: calc(15vw - 100px);
   }
 table {
-    width: 50%;
+    width: 70%;
     border-collapse: collapse;
     margin: 20px 0;
   }
@@ -105,13 +105,10 @@ table {
     padding: 8px 15px;
     text-align: center;
   }
-  tr:hover {
-    background-color: #66afe9;
-    color: #fff;
-    cursor: pointer;
-  }
-  td:hover {
+  tr:hover{
     background-color: #ff9cb0;
+    color: white;
+    cursor: pointer;
   }
   table {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
