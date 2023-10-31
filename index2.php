@@ -21,6 +21,9 @@
         </div>
     </div>
     <div class="right-side">
+        <div class="current-time">
+
+        </div>
         <table id="book-table">
             <thead>
                 <th>Tytuł książki</th>
@@ -37,5 +40,6 @@
     <script src="/jsUser2/GetBooks.js"></script>
     <script src="/jsUser2/getAuthors.js"></script>
     <script src="/jsUser2/getCountBooks.js"></script>
+    <script src="/jsUser2/getTime.js"></script>
 </body>
 </html>
