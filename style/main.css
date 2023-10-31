@@ -147,3 +147,17 @@ button>a:hover{
   line-height: 30px;
   font-size: 18px;
 }
+.add-book{
+  width: 70px;
+  height: 70px;
+  font-size: 70px;
+  background-color: #fe4066;
+  color: white;
+  border-radius: 50%;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+  line-height: 70px;
+  text-align: center;
+  cursor: pointer;
+}
