@@ -24,6 +24,7 @@
         <table id="book-table">
             <thead>
                 <th>Tytuł książki</th>
+                <th>Cena</th>
             </thead>
             <tbody id="books">
             </tbody>
@@ -33,8 +34,8 @@
         </div>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/js/GetBooks.js"></script>
-    <script src="/js/getAuthors.js"></script>
-    <script src="/js/getCountBooks.js"></script>
+    <script src="/jsUser2/GetBooks.js"></script>
+    <script src="/jsUser2/getAuthors.js"></script>
+    <script src="/jsUser2/getCountBooks.js"></script>
 </body>
 </html>
