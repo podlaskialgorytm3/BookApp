@@ -13,7 +13,7 @@ $stmt = $pdo->query('SELECT * FROM ksiazki');
 
 $html = '';
 foreach ($stmt as $row){
-    $html .=  '<option value='.$row["nazwiskoautora"].'>'.$row["imieautora"]." ".$row["nazwiskoautora"].'</option>';
+    $html .=  '<option data-surname='.$row["nazwiskoautora"].' data-name='.$row["nazwiskoautora"].'>'.$row["imieautora"]." ".$row["nazwiskoautora"].'</option>';
 }
 
 sleep(1);
