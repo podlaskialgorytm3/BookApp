@@ -39,6 +39,15 @@
             +
         </div>
     </div>
+    <div class="add-panel panel">
+            <img src="/img/close.png" alt="" class="close-btn close-add">
+            <h2>Dodaj ksiązkę</h2>
+            <input type="text" class="name" placeholder="Wpisz imię autora!">
+            <input type="text" class="surname" placeholder="Wpisz nazwisko autora!">
+            <input type="text" class="title" placeholder="Wpisz nazwę ksiązki!">
+            <input type="text" class="price" placeholder="Wpisz cenę książki!">
+            <button class="add-books">Dodaj książkę</button>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/jsUser2/GetBooks.js"></script>
     <script src="/jsUser2/getAuthors.js"></script>
