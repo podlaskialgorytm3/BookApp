@@ -30,4 +30,14 @@ function getBooksFilter(dataName,dataSurname){
     }).done(function( data ) {
         $('#books').html(data);
     });
+    $.ajax({
+        url: "../getData/get-count-filter.php",
+        method: 'POST',
+        data: {
+            name: dataName,
+            surname: dataSurname	
+        }
+    }).done(function( data ) {
+        $('.books-count').html(data);
+    });
 }
