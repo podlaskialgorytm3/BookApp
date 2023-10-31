@@ -21,7 +21,13 @@
         </div>
     </div>
     <div class="right-side">
-
+        <table id="book-table">
+            <thead>
+                <th>Tytuł książki</th>
+            </thead>
+            <tbody id="books">
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
