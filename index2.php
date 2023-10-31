@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="left-side">
-        <button class="connect top-button"><a href="index2.php">Połącz</a></button>
+        <button class="connect top-button"><a href="index.php">Rozłącz</a></button>
         <div class="select-main">
             <h2>Wybierz autora</h2>
             <div class="select-container">
