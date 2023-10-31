@@ -116,4 +116,16 @@ table {
   table {
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
   }
-  
+.books-count{
+    position: absolute;
+    bottom: 50px;
+    right: calc(35vw - 100px);
+    background-color: #fe4066;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.434);
+    color: white;
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+}

@@ -28,6 +28,9 @@
             <tbody id="books">
             </tbody>
         </table>
+        <div class="books-count">
+            
+        </div>
     </div>
 </body>
 </html>
