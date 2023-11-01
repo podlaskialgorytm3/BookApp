@@ -1,5 +1,5 @@
 <?php
-require_once '/config_user2.php';
+require_once '../config_user2.php';
 
 $result = mysqli_query($conn, "SELECT * FROM ksiazki");
 
