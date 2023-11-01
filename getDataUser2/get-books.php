@@ -25,3 +25,11 @@ sleep(1);
 
 echo $html;
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+    <script src="../jsUser2/deteleBook.js"></script>
+</body>
+</html>
