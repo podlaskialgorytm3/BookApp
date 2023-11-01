@@ -45,13 +45,14 @@
             <input type="text" class="name" placeholder="Wpisz imię autora!">
             <input type="text" class="surname" placeholder="Wpisz nazwisko autora!">
             <input type="text" class="title" placeholder="Wpisz nazwę ksiązki!">
-            <input type="text" class="price" placeholder="Wpisz cenę książki!">
-            <button class="add-books">Dodaj książkę</button>
+            <input type="number" class="price" placeholder="Wpisz cenę książki!">
+            <button class="submit-add">Dodaj książkę</button>
     </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/jsUser2/GetBooks.js"></script>
     <script src="/jsUser2/getAuthors.js"></script>
     <script src="/jsUser2/getCountBooks.js"></script>
     <script src="/jsUser2/getTime.js"></script>
+    <script src="/jsUser2/addBook.js"></script>
 </body>
 </html>
