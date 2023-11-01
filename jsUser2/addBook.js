@@ -7,6 +7,7 @@ const nameA = document.querySelector(".name")
 const surname = document.querySelector(".surname")
 const title = document.querySelector(".title")
 const price = document.querySelector(".price")
+const submitAdd = document.querySelector(".submit-add")
 
 const turnOn = () => {
     leftSide.style.display = "none"
@@ -48,28 +49,38 @@ const validation = () => {
         stepValidation++
     }
     if(stepValidation == 4){
-        console.log("Poprawna walidacja!")
-        //addBookToDatabase()
+        return true
     }
 }
 const addBookToDatabase = () => {
+    console.log(
     $.ajax({
-		url: "",
+		url: "../pushData/add-books-to-database.php",
 		type: "POST",
 		data: {
-			
+			name: nameA.value,
+            surname: surname.value,
+            title: title.value,
+            price: price.value
 		 },
 		cache: false,
 		success: function(){
-            
+            alert("Udało się poprawnie dodać książkę!")
+            getBooks()
+            getAuthors()
         }
-	    })
+	    }))
 }
-
 
 addBook.addEventListener("click",() => {
     turnOn()
 })
 closeBtn.addEventListener("click",() => {
     turnOff()
+})
+submitAdd.addEventListener("click",() => {
+    if(validation()){
+        addBookToDatabase()
+        turnOff()
+    }
 })
