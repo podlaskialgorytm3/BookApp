@@ -169,11 +169,11 @@ button>a:hover{
   height: 600px;
   background-color: #fe4066;
   border-radius: 20px;
-  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   box-shadow: 8px 8px 35px 15px #0f0f0f78;
+  display: none;
 }
 .panel>h2{
   font-size: 30px;
