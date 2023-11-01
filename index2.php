@@ -28,6 +28,8 @@
             <thead>
                 <th>Tytuł książki</th>
                 <th>Cena</th>
+                <th>Edytuj</th>
+                <th>Usuń</th>
             </thead>
             <tbody id="books">
             </tbody>
