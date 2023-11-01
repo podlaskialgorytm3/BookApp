@@ -15,6 +15,7 @@ deletes.forEach(button => {
                     alert("Udało się usunąć książkę!")
                     getBooks()
                     getCountBooks()
+                    getAuthors()
                     }
                 })
         }
