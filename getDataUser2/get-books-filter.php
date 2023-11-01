@@ -19,6 +19,8 @@ foreach ($stmt as $row){
     $html .=  '<tr>';
     $html .=  '<td>' . $row['tytul'] . '</td>';
     $html .=  '<td>' . $row['cena'] . ' zł</td>';
+    $html .=  '<td><img class="edit" src="../img/edit.png" style="width: 30px;" data-id='.$row["idksiazki"].'/></td>';
+    $html .=  '<td><img class="delete" src="../img/delete.png" style="width: 30px;" data-id='.$row["idksiazki"].'/></td>';
     $html .=  '</tr>';
 }
 
