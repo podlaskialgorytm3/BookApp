@@ -14,6 +14,7 @@ deletes.forEach(button => {
                 success: function(){
                     alert("Udało się usunąć książkę!")
                     getBooks()
+                    getCountBooks()
                     }
                 })
         }

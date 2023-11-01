@@ -68,6 +68,7 @@ const addBookToDatabase = () => {
             alert("Udało się poprawnie dodać książkę!")
             getBooks()
             getAuthors()
+            getCountBooks()
         }
 	    }))
 }
