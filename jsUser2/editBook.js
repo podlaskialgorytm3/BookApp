@@ -7,6 +7,8 @@ titleEdit = document.querySelector(".title-edit")
 priceEdit = document.querySelector(".price-edit")
 submitEdit = document.querySelector(".submit-edit")
 
+numberAttempts = 0
+
 turnOnEdit = () => {
     leftSide.style.display = "none"
     rightSide.style.display = "none"
@@ -34,15 +36,69 @@ completingData = (id) => {
             }
     }}
 }
-
-
+validationEdit = () => {
+    let stepValidation = 0
+    if(isEmpty(nameEdit.value)){
+        alert("Puste pole imię.")
+    }
+    else{
+        stepValidation++
+    }
+    if(isEmpty(surnameEdit.value)){
+        alert("Puste pole nazwisko.")
+    }
+    else{
+        stepValidation++
+    }
+    if(isEmpty(titleEdit.value)){
+        alert("Puste pole z tytułem książki.")
+    }
+    else{
+        stepValidation++
+    }
+    if(isEmpty(priceEdit.value)){
+        alert("Puste pole z ceną.")
+    }
+    else{
+        stepValidation++
+    }
+    if(stepValidation == 4){
+        return true
+    }
+}
+editBooks = (id) => {
+    $.ajax({
+		url: "../pushData/edit-books.php",
+		type: "POST",
+		data: {
+            id: id,
+            name: nameEdit.value,
+            surname: surnameEdit.value,
+            title: titleEdit.value,
+            price: priceEdit.value
+		 },
+		cache: false,
+		success: function(){
+                getAuthors()
+                getBooks()
+                alert("Udało się edytować książkę!")
+            }
+	    })
+}
 
 
 edit.forEach(button => {
     button.addEventListener("click",() => {
         turnOnEdit()
         completingData(button.dataset.id)
-        console.log(button.dataset.id)
+        numberAttempts = 0
+        submitEdit.addEventListener("click",() => {
+            if(validationEdit && numberAttempts == 0){
+                editBooks(button.dataset.id)
+                turnOffEdit()
+                numberAttempts++
+            }
+        })
     })
 });
 closeEdit.addEventListener("click",() => {
