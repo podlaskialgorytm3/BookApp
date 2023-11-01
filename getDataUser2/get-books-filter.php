@@ -34,5 +34,6 @@ echo $html;
 </head>
 <body>
     <script src="../jsUser2/deteleBook.js"></script>
+    <script src="../jsUser2/editBook.js"></script>
 </body>
 </html>
