@@ -7,8 +7,6 @@ titleEdit = document.querySelector(".title-edit")
 priceEdit = document.querySelector(".price-edit")
 submitEdit = document.querySelector(".submit-edit")
 
-numberAttempts = 0
-
 turnOnEdit = () => {
     leftSide.style.display = "none"
     rightSide.style.display = "none"
@@ -88,6 +86,7 @@ editBooks = (id) => {
 
 
 edit.forEach(button => {
+    let numberAttempts = 0
     button.addEventListener("click",() => {
         turnOnEdit()
         completingData(button.dataset.id)
