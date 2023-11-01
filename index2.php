@@ -50,6 +50,15 @@
             <input type="number" class="price" placeholder="Wpisz cenę książki!">
             <button class="submit-add">Dodaj książkę</button>
     </div>
+    <div class="edit-panel panel">
+            <img src="/img/close.png" alt="" class="close-btn close-edit">
+            <h2>Edytuj ksiązkę</h2>
+            <input type="text" class="name-edit" placeholder="Wpisz imię autora!">
+            <input type="text" class="surname-edit" placeholder="Wpisz nazwisko autora!">
+            <input type="text" class="title-edit" placeholder="Wpisz nazwę ksiązki!">
+            <input type="number" class="price-edit" placeholder="Wpisz cenę książki!">
+            <button class="submit-edit">Edytuj książkę</button>
+    </div>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="/jsUser2/GetBooks.js"></script>
     <script src="/jsUser2/getAuthors.js"></script>
