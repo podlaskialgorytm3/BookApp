@@ -1,5 +1,5 @@
 # Aplikacja do Zarządzania Książkami
-![image](https://github.com/podlaskialgorytm3/BookApp/assets/93888865/8aca4d9b-6230-4e20-813d-1cfdc97950ef)
+![image](https://github.com/podlaskialgorytm3/BookApp/assets/93888865/7b2ee85b-eddf-41af-9c27-e2c77a0b58ea)
 ## Opis Projektu
 
 Ta aplikacja internetowa jest stworzona w oparciu o technologie webowe takie jak HTML, CSS, JavaScript, PHP oraz bazę danych MySQL. Głównym celem projektu jest umożliwienie użytkownikom dodawania, edytowania, usuwania oraz przeglądania książek z bazy danych.
