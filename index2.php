@@ -37,6 +37,9 @@
         <div class="books-count">
             
         </div>
+        <div class="last-book">
+            
+        </div>
         <div class="add-book">
             +
         </div>
@@ -65,5 +68,6 @@
     <script src="/jsUser2/getCountBooks.js"></script>
     <script src="/jsUser2/getTime.js"></script>
     <script src="/jsUser2/addBook.js"></script>
+    <script src="/jsUser2/getLastItem.js"></script>
 </body>
 </html>

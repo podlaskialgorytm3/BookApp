@@ -8,6 +8,7 @@ function getBooks(){
 }
 $(document).ready(function(){
     getBooks();
+    getLastItem()
 });
 
 const select = document.querySelector("#find-writer")

@@ -79,6 +79,7 @@ editBooks = (id) => {
 		success: function(){
                 getAuthors()
                 getBooks()
+                getLastItem()
                 alert("Udało się edytować książkę!")
             }
 	    })

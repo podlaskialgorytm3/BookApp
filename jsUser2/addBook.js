@@ -69,6 +69,7 @@ const addBookToDatabase = () => {
             getBooks()
             getAuthors()
             getCountBooks()
+            getLastItem()
         }
 	    }))
 }

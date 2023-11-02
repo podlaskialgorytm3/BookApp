@@ -16,6 +16,7 @@ deletes.forEach(button => {
                     getBooks()
                     getCountBooks()
                     getAuthors()
+                    getLastItem()
                     }
                 })
         }
